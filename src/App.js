@@ -27,9 +27,15 @@ class App extends Component {
         <div className="Footer">
         {/* Social Media Buttons */}
           <div className="Social-media-buttons">
-            <i className="fab fa-facebook-f"></i>
-            <i className="fab fa-instagram"></i>
-            <i className="fab fa-youtube"></i>
+            <a href="https://www.facebook.com/OriGNerd/" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/o.g_nerd/" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/watch?v=AYMewuppO0k" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-youtube"></i>
+            </a>
           </div>
           <p>&copy; OG Nerd 2019</p>
         </div>

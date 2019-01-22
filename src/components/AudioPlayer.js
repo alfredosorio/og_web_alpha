@@ -5,7 +5,7 @@ class AudioPlayer extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      muted: false
+      muted: true
     }
     this.player = React.createRef()
     this.muteAudio = this.muteAudio.bind(this)
@@ -32,16 +32,19 @@ class AudioPlayer extends React.Component {
         >
           <source src={this.props.file} type="audio/mpeg" />
         </audio>
+        <div className="Track-info">
+          <a href="https://m.soundcloud.com/travbryanmusic/human-dragons-trav-b-ryan" target="_blank" rel="noopener noreferrer">
+            <p3>&#9835; Now Playing</p3>
+            <p>Human Dragons</p>
+            <p2>Trav B Ryan</p2>
+          </a>
+        </div>
         <div className="Audio-control">
-        {/* Song Title */}
-          <div>
-            {/* <p>Trav B Ryan - Human Dragons</p> */}
-            <IconButton onClick={this.muteAudio}>
-              {
-                this.state.muted ? <i className="fas fa-volume-up" /> : <i className="fas fa-volume-off" />
-              }
-            </IconButton>
-          </div>
+          <IconButton onClick={this.muteAudio}>
+            {
+              this.state.muted ? <i className="fas fa-volume-up" /> : <i className="fas fa-volume-off" />
+            }
+          </IconButton>
         </div>
 
         {/* Mute/Unmute Button */}
