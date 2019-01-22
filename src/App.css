@@ -1,0 +1,92 @@
+/* Cross-browser anti-aliasing */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #000000;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #FFFFFF;
+}
+
+.Audio-player audio {
+  padding-bottom: 5%;
+  height: 30px;
+  width: 250px;
+}
+
+.Audio-control {
+  font-size: 14px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5%;
+}
+
+.fas {
+  color: #FFFFFF;
+  width: 30px;
+  font-size: 0.9em;
+}
+
+.Audio-control p {
+  float: left;
+  animation-name: fade-out;
+  animation-duration: 5s;
+}
+
+.Logo-header img {
+  width: 60%;
+  padding-bottom: 10%;
+}
+
+@font-face {
+  font-family: "Nintendo NES Font";
+  src: "./assets/fonts/Nintendo NES Font.ttf" format("truetype");
+}
+
+.Coming-soon {
+  animation: text_flash 0.75s infinite;
+  padding-bottom: 10%;
+}
+
+.Coming-soon p {
+  font-family: "Nintendo NES Font";
+  text-align: center;
+}
+
+@keyframes text_flash {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+
+@keyframes fade-out {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.Footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+
+.Social-media-buttons i {
+  font-size: 2em;
+  padding: 1% 2.5%;
+}
