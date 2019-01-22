@@ -3,6 +3,7 @@ import logo from './assets/images/logo.png'
 import human_dragon from './assets/music/human_dragons.mp3'
 import AudioPlayer from './components/AudioPlayer'
 import './App.css';
+require('./assets/fonts/Nintendo NES Font.ttf')
 
 class App extends Component {
   render() {

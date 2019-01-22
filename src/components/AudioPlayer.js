@@ -35,7 +35,7 @@ class AudioPlayer extends React.Component {
         <div className="Audio-control">
         {/* Song Title */}
           <div>
-            <p>Trav B Ryan - Human Dragons</p>
+            {/* <p>Trav B Ryan - Human Dragons</p> */}
             <IconButton onClick={this.muteAudio}>
               {
                 this.state.muted ? <i className="fas fa-volume-up" /> : <i className="fas fa-volume-off" />
